@@ -1,64 +1,52 @@
-//base by DGXeon
-//re-upload? recode? copy code? give credit ya :)
-//YouTube: @DGXeon
-//Instagram: unicorn_xeon13
-//Telegram: t.me/xeonbotinc
-//GitHub: @DGXeon
-//WhatsApp: +916909137213
-//want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
-
-const fs = require('fs')
-const chalk = require('chalk')
-
-//session
-global.sessionid ='ur session id'
-
-//owmner v card
-global.ytname = "YT: Xeon" //ur yt chanel name
-global.socialm = "GitHub: DGXeon" //ur github or insta name
-global.location = "India, Mizoram, Aizawl" //ur location
-
-//new
-global.botname = 'Cheems Bot MD V11' //ur bot name
-global.ownernumber = '916909137213' //ur owner number
-global.ownername = '🦄드림 가이 Xeon' //ur owner name
-global.websitex = "https://youtu.be/mu5m6aB6P5k"
-global.wagc = "https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20"
-global.themeemoji = '🪀'
-global.wm = "Xeon Bot Inc."
-global.botscript = 'https://github.com/DGXeon/CheemsBot-MD11' //script link
-global.packname = "Sticker By"
-global.author = "🦄드림 가이 Xeon\n\n+916909137213"
-global.creator = "916909137213@s.whatsapp.net"
-global.xprefix = '.'
-global.premium = ["916909137213"] // Premium User
-global.hituet = 0
-
-//bot sett
-global.typemenu = 'v8' // menu type 'v1' => 'v8'
-global.typereply = 'v2' // reply type 'v1' => 'v3'
-global.autoblocknumber = '92' //set autoblock country code
-global.antiforeignnumber = '91' //set anti foreign number country code
-global.welcome = false //welcome/left in groups
-global.anticall = false //bot blocks user when called
-global.autoswview = false //auto status/story view
-global.adminevent = false //show promote/demote message
-global.groupevent = false //show update messages in group chat
-//msg
-global.mess = {
-	limit: 'Your limit is up!',
-	nsfw: 'Nsfw is disabled in this group, Please tell the admin to enable',
-    done: 'Done✓',
-    error: 'Error!',
-    success: 'Here you go!'
+//𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: +242053943563
+//𝐰𝐚𝐧𝐭 𝐦𝐨𝐫𝐞 𝐟𝐫𝐞𝐞 𝐛𝐨𝐭 𝐬𝐜𝐫𝐢𝐩𝐭𝐬? 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 𝐭𝐨 𝐦𝐲 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐜𝐡𝐚𝐧𝐧𝐞𝐥: 𝐡𝐭𝐭𝐩𝐬://𝐲𝐨𝐮𝐭𝐮𝐛𝐞.𝐜𝐨𝐦/@𝐃𝐆𝐗𝐞𝐨𝐧
+𝐜𝐨𝐧𝐬𝐭 𝐟𝐬 = 𝐫𝐞𝐪𝐮𝐢𝐫𝐞('𝐟𝐬')
+𝐜𝐨𝐧𝐬𝐭 𝐜𝐡𝐚𝐥𝐤 = 𝐫𝐞𝐪𝐮𝐢𝐫𝐞('𝐜𝐡𝐚𝐥𝐤')
+//𝐬𝐞𝐬𝐬𝐢𝐨𝐧
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐬𝐞𝐬𝐬𝐢𝐨𝐧𝐢𝐝 ='𝐮𝐫 𝐬𝐞𝐬𝐬𝐢𝐨𝐧 𝐢𝐝'
+//𝐨𝐰𝐦𝐧𝐞𝐫 𝐯 𝐜𝐚𝐫𝐝
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐲𝐭𝐧𝐚𝐦𝐞 = "𝐘𝐓: 𝐗𝐞𝐨𝐧" //𝐮𝐫 𝐲𝐭 𝐜𝐡𝐚𝐧𝐞𝐥 𝐧𝐚𝐦𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐬𝐨𝐜𝐢𝐚𝐥𝐦 = "𝐆𝐢𝐭𝐇𝐮𝐛: 𝐃𝐆𝐗𝐞𝐨𝐧" //𝐮𝐫 𝐠𝐢𝐭𝐡𝐮𝐛 𝐨𝐫 𝐢𝐧𝐬𝐭𝐚 𝐧𝐚𝐦𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐥𝐨𝐜𝐚𝐭𝐢𝐨𝐧 = "𝐈𝐧𝐝𝐢𝐚, 𝐌𝐢𝐳𝐨𝐫𝐚𝐦, 𝐀𝐢𝐳𝐚𝐰𝐥" //𝐮𝐫 𝐥𝐨𝐜𝐚𝐭𝐢𝐨𝐧
+//𝐧𝐞𝐰
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐛𝐨𝐭𝐧𝐚𝐦𝐞 = '𝐃𝐎𝐌𝐀 𝐌𝐎𝐎𝐍 𝐑.𝐆' //𝐮𝐫 𝐛𝐨𝐭 𝐧𝐚𝐦𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐨𝐰𝐧𝐞𝐫𝐧𝐮𝐦𝐛𝐞𝐫 = '𝟚𝟜𝟚𝟘𝟝𝟛𝟡𝟜𝟛𝟝𝟞𝟛' //𝐮𝐫 𝐨𝐰𝐧𝐞𝐫 𝐧𝐮𝐦𝐛𝐞𝐫
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐨𝐰𝐧𝐞𝐫𝐧𝐚𝐦𝐞 = '🦄드림 가이 𝐗𝐞𝐨𝐧' //𝐮𝐫 𝐨𝐰𝐧𝐞𝐫 𝐧𝐚𝐦𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐰𝐞𝐛𝐬𝐢𝐭𝐞𝐱 = "𝐡𝐭𝐭𝐩𝐬://𝐲𝐨𝐮𝐭𝐮.𝐛𝐞/𝐦𝐮𝟝𝐦𝟞𝐚𝐁𝟞𝐏𝟝𝐤"
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐰𝐚𝐠𝐜 = "𝐡𝐭𝐭𝐩𝐬://𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩.𝐜𝐨𝐦/𝐜𝐡𝐚𝐧𝐧𝐞𝐥/𝟘𝟘𝟚𝟡𝐕𝐚𝐆𝟡𝐕𝐟𝐏𝐊𝐖𝐄𝐊𝐤𝟙𝐫𝐱𝐓𝐐𝐃𝟚𝟘"
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐭𝐡𝐞𝐦𝐞𝐞𝐦𝐨𝐣𝐢 = '🪀'
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐰𝐦 = "𝐗𝐞𝐨𝐧 𝐁𝐨𝐭 𝐈𝐧𝐜."
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐛𝐨𝐭𝐬𝐜𝐫𝐢𝐩𝐭 = '𝐡𝐭𝐭𝐩𝐬://𝐠𝐢𝐭𝐡𝐮𝐛.𝐜𝐨𝐦/𝐃𝐆𝐗𝐞𝐨𝐧/𝐂𝐡𝐞𝐞𝐦𝐬𝐁𝐨𝐭-𝐌𝐃𝟙𝟙' //𝐬𝐜𝐫𝐢𝐩𝐭 𝐥𝐢𝐧𝐤
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐩𝐚𝐜𝐤𝐧𝐚𝐦𝐞 = "𝐒𝐭𝐢𝐜𝐤𝐞𝐫 𝐁𝐲"
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐚𝐮𝐭𝐡𝐨𝐫 = "🦄드림 가이 𝐗𝐞𝐨𝐧\𝐧\𝐧+𝟚𝟜𝟚𝟘𝟝𝟛𝟡𝟜𝟛𝟝𝟞𝟛"
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐜𝐫𝐞𝐚𝐭𝐨𝐫 = "𝟚𝟜𝟚𝟘𝟝𝟛𝟡𝟜𝟛𝟝𝟞𝟛@𝐬.𝐰𝐡𝐚𝐭𝐬𝐚𝐩𝐩.𝐧𝐞𝐭"
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐱𝐩𝐫𝐞𝐟𝐢𝐱 = '🌕'
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐩𝐫𝐞𝐦𝐢𝐮𝐦 = ["𝟚𝟜𝟚𝟘𝟝𝟛𝟡𝟜𝟛𝟝𝟞𝟛"] // 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐔𝐬𝐞𝐫
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐡𝐢𝐭𝐮𝐞𝐭 = 𝟘
+//𝐛𝐨𝐭 𝐬𝐞𝐭𝐭
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐭𝐲𝐩𝐞𝐦𝐞𝐧𝐮 = '𝐯𝟠' // 𝐦𝐞𝐧𝐮 𝐭𝐲𝐩𝐞 '𝐯𝟙' => '𝐯𝟠'
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐭𝐲𝐩𝐞𝐫𝐞𝐩𝐥𝐲 = '𝐯𝟚' // 𝐫𝐞𝐩𝐥𝐲 𝐭𝐲𝐩𝐞 '𝐯𝟙' => '𝐯𝟛'
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐚𝐮𝐭𝐨𝐛𝐥𝐨𝐜𝐤𝐧𝐮𝐦𝐛𝐞𝐫 = '𝟡𝟚' //𝐬𝐞𝐭 𝐚𝐮𝐭𝐨𝐛𝐥𝐨𝐜𝐤 𝐜𝐨𝐮𝐧𝐭𝐫𝐲 𝐜𝐨𝐝𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐚𝐧𝐭𝐢𝐟𝐨𝐫𝐞𝐢𝐠𝐧𝐧𝐮𝐦𝐛𝐞𝐫 = '𝟡𝟙' //𝐬𝐞𝐭 𝐚𝐧𝐭𝐢 𝐟𝐨𝐫𝐞𝐢𝐠𝐧 𝐧𝐮𝐦𝐛𝐞𝐫 𝐜𝐨𝐮𝐧𝐭𝐫𝐲 𝐜𝐨𝐝𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐰𝐞𝐥𝐜𝐨𝐦𝐞 = 𝐟𝐚𝐥𝐬𝐞 //𝐰𝐞𝐥𝐜𝐨𝐦𝐞/𝐥𝐞𝐟𝐭 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩𝐬
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐚𝐧𝐭𝐢𝐜𝐚𝐥𝐥 = 𝐟𝐚𝐥𝐬𝐞 //𝐛𝐨𝐭 𝐛𝐥𝐨𝐜𝐤𝐬 𝐮𝐬𝐞𝐫 𝐰𝐡𝐞𝐧 𝐜𝐚𝐥𝐥𝐞𝐝
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐚𝐮𝐭𝐨𝐬𝐰𝐯𝐢𝐞𝐰 = 𝐟𝐚𝐥𝐬𝐞 //𝐚𝐮𝐭𝐨 𝐬𝐭𝐚𝐭𝐮𝐬/𝐬𝐭𝐨𝐫𝐲 𝐯𝐢𝐞𝐰
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐚𝐝𝐦𝐢𝐧𝐞𝐯𝐞𝐧𝐭 = 𝐟𝐚𝐥𝐬𝐞 //𝐬𝐡𝐨𝐰 𝐩𝐫𝐨𝐦𝐨𝐭𝐞/𝐝𝐞𝐦𝐨𝐭𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐠𝐫𝐨𝐮𝐩𝐞𝐯𝐞𝐧𝐭 = 𝐟𝐚𝐥𝐬𝐞 //𝐬𝐡𝐨𝐰 𝐮𝐩𝐝𝐚𝐭𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬 𝐢𝐧 𝐠𝐫𝐨𝐮𝐩 𝐜𝐡𝐚𝐭
+//𝐦𝐬𝐠
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐦𝐞𝐬𝐬 = {	
+𝐥𝐢𝐦𝐢𝐭: '𝐘𝐨𝐮𝐫 𝐥𝐢𝐦𝐢𝐭 𝐢𝐬 𝐮𝐩!',	
+𝐧𝐬𝐟𝐰: '𝐍𝐬𝐟𝐰 𝐢𝐬 𝐝𝐢𝐬𝐚𝐛𝐥𝐞𝐝 𝐢𝐧 𝐭𝐡𝐢𝐬 𝐠𝐫𝐨𝐮𝐩, 𝐏𝐥𝐞𝐚𝐬𝐞 𝐭𝐞𝐥𝐥 𝐭𝐡𝐞 𝐚𝐝𝐦𝐢𝐧 𝐭𝐨 𝐞𝐧𝐚𝐛𝐥𝐞',    
+𝐝𝐨𝐧𝐞: '𝐃𝐨𝐧𝐞✓',    
+𝐞𝐫𝐫𝐨𝐫: '𝐄𝐫𝐫𝐨𝐫!',    
+𝐬𝐮𝐜𝐜𝐞𝐬𝐬: '𝐇𝐞𝐫𝐞 𝐲𝐨𝐮 𝐠𝐨!'
 }
-//thumbnail
-global.thumb = fs.readFileSync('./XeonMedia/theme/cheemspic.jpg')
-
-let file = require.resolve(__filename)
-fs.watchFile(file, () => {
-    fs.unwatchFile(file)
-    console.log(chalk.redBright(`Update'${__filename}'`))
-    delete require.cache[file]
-    require(file)
+//𝐭𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥
+𝐠𝐥𝐨𝐛𝐚𝐥.𝐭𝐡𝐮𝐦𝐛 = 𝐟𝐬.𝐫𝐞𝐚𝐝𝐅𝐢𝐥𝐞𝐒𝐲𝐧𝐜('./𝐗𝐞𝐨𝐧𝐌𝐞𝐝𝐢𝐚/𝐭𝐡𝐞𝐦𝐞/𝐜𝐡𝐞𝐞𝐦𝐬𝐩𝐢𝐜.𝐣𝐩𝐠')
+𝐥𝐞𝐭 𝐟𝐢𝐥𝐞 = 𝐫𝐞𝐪𝐮𝐢𝐫𝐞.𝐫𝐞𝐬𝐨𝐥𝐯𝐞(__𝐟𝐢𝐥𝐞𝐧𝐚𝐦𝐞)
+𝐟𝐬.𝐰𝐚𝐭𝐜𝐡𝐅𝐢𝐥𝐞(𝐟𝐢𝐥𝐞, () => {
+    𝐟𝐬.𝐮𝐧𝐰𝐚𝐭𝐜𝐡𝐅𝐢𝐥𝐞(𝐟𝐢𝐥𝐞)
+    𝐜𝐨𝐧𝐬𝐨𝐥𝐞.𝐥𝐨𝐠(𝐜𝐡𝐚𝐥𝐤.𝐫𝐞𝐝𝐁𝐫𝐢𝐠𝐡𝐭(`𝐔𝐩𝐝𝐚𝐭𝐞'${__𝐟𝐢𝐥𝐞𝐧𝐚𝐦𝐞}'`))    
+𝐝𝐞𝐥𝐞𝐭𝐞 𝐫𝐞𝐪𝐮𝐢𝐫𝐞.𝐜𝐚𝐜𝐡𝐞[𝐟𝐢𝐥𝐞]    
+𝐫𝐞𝐪𝐮𝐢𝐫𝐞(𝐟𝐢𝐥𝐞)
 })
