@@ -4,7 +4,7 @@
 //Instagram: unicorn_xeon13
 //Telegram: t.me/xeonbotinc
 //GitHub: @DGXeon
-//WhatsApp: +242053943563
+//WhatsApp: +242050259876
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
 
 const fs = require('fs')
@@ -20,7 +20,7 @@ global.location = "India, Mizoram, Aizawl" //ur location
 
 //new
 global.botname = 'DOMA MOON R.G🌙' //ur bot name
-global.ownernumber = '242053943563' //ur owner number
+global.ownernumber = '242050259876' //ur owner number
 global.ownername = '🦄드림 가이 Xeon' //ur owner name
 global.websitex = "https://youtu.be/mu5m6aB6P5k"
 global.wagc = "https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20"
@@ -28,10 +28,10 @@ global.themeemoji = '🪀'
 global.wm = "Xeon Bot Inc."
 global.botscript = 'https://github.com/DGXeon/CheemsBot-MD11' //script link
 global.packname = "Sticker By"
-global.author = "🦄드림 가이 Xeon\n\n+242053943563"
-global.creator = "242053943563@s.whatsapp.net"
+global.author = "🦄드림 가이 Xeon\n\n+242050259876"
+global.creator = "242050259876@s.whatsapp.net"
 global.xprefix = '🌕'
-global.premium = ["242053943563"] // Premium User
+global.premium = ["242050259876"] // Premium User
 global.hituet = 0
 
 //bot sett
